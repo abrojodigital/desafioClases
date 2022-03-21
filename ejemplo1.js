@@ -31,7 +31,7 @@ class Gato extends Mascota {
   set setRaza(raza) {
     this.raza = raza
   }
-  emitirSonido() {
+  get emitirSonido() {
     return `${this.nombre} emite un miau`
   }
 }
@@ -47,7 +47,7 @@ class Perro extends Mascota {
   set setRaza(raza) {
     this.raza = raza
   }
-  emitirSonido() {
+  get emitirSonido() {
     return `${this.nombre} emite un guau`
   }
 }
@@ -59,8 +59,8 @@ const GATO = new Gato('Bola de Nieve VI', 4, 'Bombay')
 const PERRO = new Perro('Ayudante de Santa', 4, 'galgo')
 
 // Probando el método emitirSonido
-console.log(GATO.emitirSonido())
-console.log(PERRO.emitirSonido())
+console.log(GATO.emitirSonido)
+console.log(PERRO.emitirSonido)
 
 // cambio el nombre de la mascota a "Bola de Nieve VII"
 GATO.setNombre = 'Bola de Nieve VII'
