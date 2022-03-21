@@ -62,6 +62,9 @@ const PERRO = new Perro('Ayudante de Santa', 4, 'galgo')
 console.log(GATO.emitirSonido())
 console.log(PERRO.emitirSonido())
 
+// cambio el nombre de la mascota a "Bola de Nieve VII"
+GATO.setNombre = 'Bola de Nieve VII'
+
 // Probando el método getPatas
 console.log(`${GATO.nombre} tiene ${GATO.getPatas} patas`)
 console.log(`${PERRO.nombre} tiene ${PERRO.getPatas} patas`)
