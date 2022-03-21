@@ -1,4 +1,4 @@
-class Animal {
+class Mascota {
   constructor(nombre, patas) {
     this.nombre = nombre
     this.patas = patas
