@@ -3,16 +3,16 @@ class Mascota {
     this.nombre = nombre
     this.patas = patas
   }
-  getNombre() {
+  get getNombre() {
     return this.nombre
   }
-  getPatas() {
+  get getPatas() {
     return this.patas
   }
-  setNombre(nombre) {
+  set setNombre(nombre) {
     this.nombre = nombre
   }
-  setPatas(patas) {
+  set setPatas(patas) {
     this.patas = patas
   }
   emitirSonido() {
@@ -25,10 +25,10 @@ class Gato extends Mascota {
     super(nombre, patas)
     this.raza = raza
   }
-  getRaza() {
+  get getRaza() {
     return this.raza
   }
-  setRaza(raza) {
+  set setRaza(raza) {
     this.raza = raza
   }
   emitirSonido() {
@@ -41,10 +41,10 @@ class Perro extends Mascota {
     super(nombre, patas)
     this.raza = raza
   }
-  getRaza() {
+  get getRaza() {
     return this.raza
   }
-  setRaza(raza) {
+  set setRaza(raza) {
     this.raza = raza
   }
   emitirSonido() {
@@ -63,5 +63,5 @@ console.log(GATO.emitirSonido())
 console.log(PERRO.emitirSonido())
 
 // Probando el método getPatas
-console.log(GATO.getPatas())
-console.log(PERRO.getPatas())
+console.log(`${GATO.nombre} tiene ${GATO.getPatas} patas`)
+console.log(`${PERRO.nombre} tiene ${PERRO.getPatas} patas`)
