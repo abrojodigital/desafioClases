@@ -20,7 +20,7 @@ class Mascota {
   }
 }
 
-class Gato extends Animal {
+class Gato extends Mascota {
   constructor(nombre, patas, raza) {
     super(nombre, patas)
     this.raza = raza
@@ -36,7 +36,7 @@ class Gato extends Animal {
   }
 }
 
-class Perro extends Animal {
+class Perro extends Mascota {
   constructor(nombre, patas, raza) {
     super(nombre, patas)
     this.raza = raza
